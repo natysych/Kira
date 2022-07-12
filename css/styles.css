@@ -48,6 +48,9 @@ margin-right: auto;
 padding-top: 94px;
 padding-bottom: 34px;
 }
+.pageone.header {
+background: var(--sectionbackgroung);
+}
 .header {
 padding-top: 25px;
 padding-bottom: 25px;
@@ -133,6 +136,9 @@ color: var(--weblogo-color);
     background-color: var(--solutionbackground-color);
 } */
 .solution {
+background-image: radial-gradient(at center,
+rgba(33, 46, 196, 0.4) 80%,
+rgba(47, 48, 58, 0.4) 50%);
 background: var(--solutionbackground-color);
 padding-top: 25px;
 padding-bottom: 25px;
@@ -167,8 +173,10 @@ letter-spacing: 0.06em;
 font-weight: 700;
 line-height: 1.62;
 }
-
-/* Наши преимущества стили */
+.about {
+background: var(--sectionbackgroung);
+}
+/* Який я */
 .advantages {
 display: flex;
 align-items: flex-start;
@@ -179,8 +187,17 @@ margin-right: 30px;
 .advantage-items {
 flex-basis: calc((100%-4*30px)/4);
 }
+.icon:focus,
+.icon:hover {
+fill: var(--weblogo-color);
+}
+.advantage-header:focus,
+.advantage-header:hover {
+color: var(--weblogo-color);
+}
 
 .advantage-header {
+margin-top: 20px;
 line-height: 1.14;
 font-size: 14px;
 text-transform: uppercase;
@@ -196,7 +213,7 @@ color: var(--tel-color);
 /* Наша команда - стили */ 
 .section-team {
 margin-top: 94px;
-margin-bottom: 34px;
+padding-bottom: 54px;
 background: var(--sectionbackgroung);
 }
 
@@ -233,7 +250,7 @@ flex-wrap: wrap;
     height: 428px;
 }
 .pics-text {
-    font-family: 'Roboto';
+    font-family: roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -287,15 +304,15 @@ line-height: 1.71;
 background: var(--solutionbackground-color);}
 
 .footer-container {
-padding-top: 60px;
-padding-bottom: 60px;
+padding-top: 20px;
+padding-bottom: 20px;
 }
 .studiofooter {
 color: var(--background);
 }
 
 .nav-footer {
-    display: flex;
+display: flex;
 margin-top: 20px;
  }
 /* Футер- Адрес */
