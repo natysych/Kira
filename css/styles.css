@@ -46,7 +46,7 @@ margin-right: auto;
 }
 .section {
 padding-top: 94px;
-/* padding-bottom: 94px; */
+padding-bottom: 34px;
 }
 .header {
 padding-top: 25px;
@@ -72,21 +72,24 @@ align-items: center;
 .current {
 color: var(--weblogo-color);}
 
-.href:focus, .href:hover {
-color:var(--weblogo-color);
+.href:focus, 
+.href:hover {
+color: var(--weblogo-color);
 }
 
 .email:hover, .email:focus {
 color: var(--weblogo-color);
 }
-.nav-listitem:not(:last-child) {
+.nav-listitem {
 margin-right: 50px;
 font-weight: 700;
 letter-spacing: 0.02em;
 line-height: 1.21;
 color: var(--portcontacts-color);
 }
-
+.href {
+color: var(--portcontacts-color);
+}
 /*Шапка- лого */
 .logo {
 margin-right: 93px;
@@ -115,7 +118,7 @@ color: var(--weblogo-color);
 }
 
 /* Блок эффективные решения - заказать услугу */
-.overlay {
+/* .overlay {
     max-width: 1600px;
     height: 480px;
     margin-left: auto;
@@ -128,7 +131,7 @@ color: var(--weblogo-color);
     background-size: cover;
     background-position: center;
     background-color: var(--solutionbackground-color);
-}
+} */
 .solution {
 background: var(--solutionbackground-color);
 padding-top: 25px;
@@ -192,12 +195,14 @@ color: var(--tel-color);
 
 /* Наша команда - стили */ 
 .section-team {
-margin-bottom: 94px;
+margin-top: 94px;
+margin-bottom: 34px;
 background: var(--sectionbackgroung);
 }
 
 .header-h {
 margin-bottom: 50px;
+padding-top: 50px;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
