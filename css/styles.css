@@ -212,10 +212,11 @@ flex-wrap: wrap;
 
 .pics-wrap {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 1170px;
-    height: 386px;
+    height: 780px;
 
 }
 /* .pic:not(:last-child) {
