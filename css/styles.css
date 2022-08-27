@@ -2,7 +2,7 @@ a { text-decoration: none;}
 ul {list-style: none;}
 li {list-style: none;}
 :root {
-    --weblogo-color: #2196F3;
+    --weblogo-color: green;
     --text-color: #000000;
     --background:#FFFFFF;
     --portcontacts-color: #212121;
@@ -96,9 +96,13 @@ color: var(--portcontacts-color);
 /*Шапка- лого */
 .logo {
 margin-right: 93px;
-background-color: black;
 }
-
+.logo-footer {
+fill: #FFFFFF;
+}
+.logo-pic {
+    background-color: none;
+}
 .email{
 margin-left: auto;
 margin-right: 50px;
@@ -120,33 +124,23 @@ color: var(--weblogo-color);
 color: var(--weblogo-color);
 }
 
-/* Блок эффективные решения - заказать услугу */
-/* .overlay {
-    max-width: 1600px;
-    height: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/Imgpic-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: var(--solutionbackground-color);
-} */
 .solution {
-background-image: radial-gradient(at center,
-rgba(33, 46, 196, 0.4) 80%,
-rgba(47, 48, 58, 0.4) 50%);
-background: var(--solutionbackground-color);
+background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.6),
+        rgba(47, 48, 58, 0.6)),
+url(../images/wallpaper.jpg);
+height: 600px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 padding-top: 25px;
 padding-bottom: 25px;
 text-align: center;
 }
 
 .solution-text {
-padding-bottom: 5px;
+padding-bottom: 50px;
+padding-top: 250px;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36;
@@ -166,7 +160,7 @@ min-width: 200px;
 font-size: 16px;
 background: var(--weblogo-color);
 color: var(--background);
-border: 1px solid var(--text-color);
+border: 1px solid var(--background);
 padding: 10px 32px;
 border-radius: 4px;
 letter-spacing: 0.06em;
@@ -183,17 +177,18 @@ align-items: flex-start;
 }
 .advantage-items:not(:last-child) {
 margin-right: 30px;
+
 }
 .advantage-items {
+display: flex;
+flex-direction: column;
+
 flex-basis: calc((100%-4*30px)/4);
 }
-.icon:focus,
-.icon:hover {
+
+.advantage-items-list:focus,
+.advantage-items-list:hover {
 fill: var(--weblogo-color);
-}
-.advantage-header:focus,
-.advantage-header:hover {
-color: var(--weblogo-color);
 }
 
 .advantage-header {
@@ -393,6 +388,11 @@ margin-right: 30px;
 }
 .work-items {
 margin-bottom: 30px;
+}
+.work-items:hover,
+.work-items:focus{
+    background-color: #757575;
+    border: 2px solid gray;
 }
 .workitems-wrapper {
 padding: 20px 24px;
