@@ -45,7 +45,7 @@ margin-left: auto;
 margin-right: auto;
 }
 .section {
-padding-top: 94px;
+padding-top: 34px;
 padding-bottom: 34px;
 }
 .pageone.header {
@@ -100,9 +100,16 @@ margin-right: 93px;
 .logo-footer {
 fill: #FFFFFF;
 }
+.logo:hover {
+fill: var(--weblogo-color);
+transition: fill 250ms linear;
+}
+
 .logo-pic {
     background-color: none;
 }
+
+
 .email{
 margin-left: auto;
 margin-right: 50px;
@@ -118,6 +125,7 @@ margin-right: 50px;
 
 .contacts:hover{
 color: var(--weblogo-color);
+font-style: solid;
 }
 
 .contacts:focus {
@@ -137,10 +145,10 @@ padding-top: 25px;
 padding-bottom: 25px;
 text-align: center;
 }
+/* Кнопка " */
 
 .solution-text {
-padding-bottom: 50px;
-padding-top: 250px;
+padding-top: 200px;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36;
@@ -149,13 +157,18 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--background);
 }
-/* Кнопка "Заказать услугу" */
+.solution-text:hover {
+font-size: 65px;
+transition: font-size 250ms linear;
+}
+
 
 button { 
 cursor: pointer;
 }
 
 .button-orderservice {
+margin-top: 150px;
 min-width: 200px;
 font-size: 16px;
 background: var(--weblogo-color);
@@ -166,6 +179,10 @@ border-radius: 4px;
 letter-spacing: 0.06em;
 font-weight: 700;
 line-height: 1.62;
+}
+.button-orderservice:hover {
+border: 5px solid var(--background);
+transition: border 250ms linear;
 }
 .about {
 background: var(--sectionbackgroung);
@@ -213,14 +230,57 @@ background: var(--sectionbackgroung);
 }
 
 .header-h {
-margin-bottom: 50px;
-padding-top: 50px;
+padding-top: 34px;
+padding-bottom: 34px;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 color: var(--portcontacts-color);
 }
+.header-recipes {
+margin-top: 50px;
+margin-bottom: 20px;
+color: green;
+font-size: 30px;
+line-height: 1.16;
+}
+.article-colums {
+    display: flex;
+    margin-bottom: 34px;
+}
 
+.recipes-items {
+    padding: 15px; 
+    border: 1px dotted green;
+    margin-right: 15px;
+}
+
+.recipes-items-name {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 26px;
+    line-height: 1.16;
+}
+.recipes-items-name:hover {
+    color: green;
+}
+
+.recipes-items-name::before {
+    background-image: url(../images/point-right.svg);
+    content: '';
+    width: 16px;
+    height: 15px;
+
+}
+
+.ingredients {
+    font-display: underline;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.receipt {
+    margin-top: 10px;
+}
 .team {
 display: flex;
 flex-wrap: wrap;
@@ -294,7 +354,6 @@ letter-spacing: 0.03em;
 
 /*Футер-Вебстудия */
 .footer {
-
 line-height: 1.71;
 background: var(--solutionbackground-color);}
 
@@ -323,7 +382,7 @@ line-height: 1.71;
 .contacts.footer {
 color: var(--tel-color);
 letter-spacing: 0.03em;
-margin-left: 50px;
+margin-left: 20px;
 }
 .contacts.footer:hover {
 color: var(--weblogo-color);
