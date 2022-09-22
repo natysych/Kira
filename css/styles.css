@@ -180,10 +180,10 @@ letter-spacing: 0.06em;
 font-weight: 700;
 line-height: 1.62;
 }
-.button-orderservice:hover {
+/* .button-orderservice:hover {
 border: 5px solid var(--background);
 transition: border 250ms linear;
-}
+} */
 .about {
 background: var(--sectionbackgroung);
 }
@@ -237,22 +237,27 @@ line-height: 1.16;
 text-align: center;
 color: var(--portcontacts-color);
 }
+
 .header-recipes {
 margin-top: 50px;
+margin-left: 70px;
 margin-bottom: 20px;
 color: green;
 font-size: 30px;
 line-height: 1.16;
 }
+
 .article-colums {
     display: flex;
     margin-bottom: 34px;
+    justify-content: center;
 }
 
 .recipes-items {
     padding: 15px; 
     border: 1px dotted green;
     margin-right: 15px;
+    width: 510px;
 }
 
 .recipes-items-name {
