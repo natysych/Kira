@@ -241,7 +241,6 @@ color: var(--portcontacts-color);
 .header-recipes {
 margin-top: 50px;
 margin-left: 70px;
-margin-bottom: 20px;
 color: green;
 font-size: 30px;
 line-height: 1.16;
@@ -271,11 +270,20 @@ line-height: 1.16;
 }
 
 .recipes-items-name::before {
-    background-image: url(../images/point-right.svg);
-    content: '';
-    width: 16px;
+    background-image: url(../images/point-down.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px; 
     height: 15px;
+    display: inline-block;
+    background-color: green;
+    content: '';
+    margin-top: 12px;
+    margin-right: 12px;
+}
 
+.recipes-items-name:hover:before {
+    background-color: black;
 }
 
 .ingredients {
